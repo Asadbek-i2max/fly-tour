@@ -1,4 +1,4 @@
-import InfoBar from '../components/InfoBar/infobar';
+import InfoBar from '../components/InfoBar';
 
 function Main() {
   return (
