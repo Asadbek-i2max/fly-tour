@@ -1,4 +1,7 @@
+import { useTranslation } from 'react-i18next';
+
 const InfoBar = () => {
+  const { t } = useTranslation();
   return (
     <div className="bg-slate-900 text-slate-300 py-2 border-b border-gray-300">
       <div className="container mx-auto flex justify-between items-center px-4">
@@ -15,7 +18,7 @@ const InfoBar = () => {
 
         <div className="text-sm flex space-x-3">
           <span>
-            <i className="fas fa-envelope mr-1"></i> Email:
+            <i className="fas fa-envelope mr-1"></i> {t('email')}:
             flytour@info.com
           </span>
           <a href="#" className="hover:text-blue-600">

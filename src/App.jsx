@@ -1,4 +1,6 @@
 import InfoBar from './components/InfoBar/infobar';
+import './i18n';
+
 
 function App() {
   return <>
