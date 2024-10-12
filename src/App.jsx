@@ -1,13 +1,22 @@
-import InfoBar from './components/InfoBar/infobar';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from 'react-router-dom';
+import Main from './pages/Main';
+
 import './i18n';
 
-
 function App() {
-  return <>
-  <div className="dark:bg-slate-900">
-  <InfoBar />
-  </div>
-  </>;
+  return (
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Main />} />
+        </Routes>
+      </Router>
+    </>
+  );
 }
 
 export default App;
