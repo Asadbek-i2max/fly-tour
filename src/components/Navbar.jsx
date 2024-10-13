@@ -1,23 +1,23 @@
-// import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const Navbar = () => {
-  //   const { t } = useTranslation();
-  const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen((prev) => !prev);
+  };
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -25,88 +25,77 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full z-10 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-white border-b border-gray-200'
-          : 'bg-transparent'
+      className={`fixed left-0 w-full z-10 transition-all duration-300 ${
+        isScrolled || window.innerWidth < 768
+          ? 'bg-white text-black'
+          : 'bg-transparent text-white top-8'
       }`}
+      style={{ padding: '1rem' }}
     >
-      <div className="container mx-auto flex justify-between items-center p-4">
-        <div className="text-2xl font-bold text-slate-900">
-          <Link to="/">
-            <img
-              src="/src/assets/images/logo.png"
-              className="w-40 object-contain"
-              alt="logo"
-            ></img>
-          </Link>
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="logo">
+          <img
+            src="/src/assets/images/logo.png"
+            alt="Logo"
+            className="w-40 object-contain"
+          />
         </div>
-        <div className="hidden md:flex space-x-6">
-          <Link to="/" className="text-slate-900 hover:text-blue-500">
-            Main
-          </Link>
-          <Link to="/" className="text-slate-900 hover:text-blue-500">
-            Tours
-          </Link>
-          <Link to="/" className="text-slate-900 hover:text-blue-500">
-            About us
-          </Link>
-          <Link to="/" className="text-slate-900 hover:text-blue-500">
-            Blogs
-          </Link>
-          <Link to="/" className="text-slate-900 hover:text-blue-500">
-            Contact us
-          </Link>
-        </div>
-        <div className="md:hidden">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-slate-900 focus:outline-none"
+
+        <button
+          className="md:hidden p-2 focus:outline-none"
+          onClick={toggleMobileMenu}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            {isMobileMenuOpen ? (
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                d={
-                  isOpen
-                    ? 'M6 18L18 6M6 6l12 12'
-                    : 'M4 6h16M4 12h16M4 18h16'
-                }
-              ></path>
-            </svg>
-          </button>
-        </div>
-        <div
-          className={`md:hidden ${
-            isOpen ? 'flex' : 'hidden'
-          } flex-col items-center absolute left-0 w-full bg-white border-t`}
-          style={{
-            top: '150px'
-          }}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            )}
+          </svg>
+        </button>
+
+        <ul
+          className={`flex md:flex-row flex-col md:items-center absolute md:relative bg-white md:bg-transparent left-0 w-full md:w-auto transition-transform duration-300 ${
+            isMobileMenuOpen ? 'top-16' : '-top-48'
+          } md:top-0 md:space-x-4 space-y-2 md:space-y-0 p-4 md:p-0`}
         >
-          <Link to="/" className="text-xl text-slate-900 hover:text-blue-500">
-            Main
-          </Link>
-          <Link to="/" className="text-xl text-slate-900 hover:text-blue-500">
-            Tours
-          </Link>
-          <Link to="/" className="text-xl text-slate-900 hover:text-blue-500">
-            About us
-          </Link>
-          <Link to="/" className="text-xl text-slate-900 hover:text-blue-500">
-            Blogs
-          </Link>
-          <Link to="/" className="text-xl text-slate-900 hover:text-blue-500">
-            Contact us
-          </Link>
-        </div>
+          <li>
+            <a href="#home" className="hover:text-red-500">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" className="hover:text-red-500">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#services" className="hover:text-red-500">
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className="hover:text-red-500">
+              Contact
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   );

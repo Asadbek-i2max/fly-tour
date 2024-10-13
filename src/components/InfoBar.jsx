@@ -1,18 +1,36 @@
-// import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
 
 const InfoBar = () => {
-  //   const { t } = useTranslation();
-  const iconcolor = { color: '#e8a411' };
+  const [isSmallScreen, setIsSmallScreen] = useState(
+    window.innerWidth < 768
+  );
+
+  const handleResize = () => {
+    setIsSmallScreen(window.innerWidth < 768);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const iconcolor = { color: '#FFA500' };
 
   return (
-    <div className="bg-slate-900 text-slate-300 py-2 border-b border-gray-300">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
-        <div className="text-sm mb-2 md:mb-0 flex flex-col items-center">
-          <span className="mr-4">
+    <div
+      className={`absolute z-10 w-full py-2 px-2 ${
+        isSmallScreen ? 'hidden' : 'bg-slate-900 text-slate-300'
+      }`}
+    >
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div className="text-sm mb-2 md:mb-0">
+          <span>
             <i className="fa-regular fa-clock" style={iconcolor}></i>
             <span className="ml-1">Mon-Sun: 9am to 6pm</span>
           </span>
-          <span className="mr-4">
+          <span className="ml-4">
             <i
               className="fa-solid fa-location-dot"
               style={iconcolor}
