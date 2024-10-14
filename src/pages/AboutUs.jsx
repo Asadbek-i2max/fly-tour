@@ -3,12 +3,12 @@ import Footer from "../components/Footer";
 import Location from "../components/Location";
 import About from "../components/About";
 import Review from "../components/Reviews";
-import Team from "../components/Team"
+import Team from "../components/Team";
 
 const AboutUs = () => {
     return (
         <>
-        <Navbar />
+        <Navbar className="-top-[1.6rem]"/>
         <About />
         <Review />
         <Team />

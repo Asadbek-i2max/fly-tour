@@ -3,13 +3,13 @@ const teamMembersData = [
   {
     id: 1,
     name: "Abdurakhmonov Muhammad",
-    image: "/src/assets/images/cero.jpg",
+    image: "/src/assets/images/CEO.JPG",
     role: "CEO"
   },
   {
     id: 2,
     name: "Abdurakhmonov Dilmurod",
-    image: "/src/assets/images/cero.jpg",
+    image: "/src/assets/images/CEO.JPG",
     role: "Manager"
   }
 ];

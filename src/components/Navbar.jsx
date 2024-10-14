@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 // import { useTranslation } from 'react-i18next';
 import i18n from "../i18n";
 
-// eslint-disable-next-line react/prop-types
-const Navbar = ({ isMain }) => {
+
+const Navbar = () => {
   // const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -57,9 +57,7 @@ const Navbar = ({ isMain }) => {
       className={`fixed left-0 w-full z-10 transition-all duration-300 ${
         isScrolled || window.innerWidth < 768
           ? "bg-white text-black"
-          : "bg-transparent text-white"
-      } ${isMain ? "top-[1.9rem]" : "top-0"} ${
-        isMain && window.innerWidth < 768 ? "-top-[0.2rem]" : ""
+          : "bg-transparent text-white top-[1.6rem]" 
       }`}
       style={{ padding: "1rem 0" }}
     >

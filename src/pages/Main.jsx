@@ -13,7 +13,7 @@ function Main() {
   return (
     <div>
       <InfoBar />
-      <Navbar isMain={true} />
+      <Navbar />
       <Hero />
       <FlyCard />
       <BannerPic />
