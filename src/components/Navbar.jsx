@@ -4,13 +4,17 @@ import { Link } from "react-router-dom";
 // import { useTranslation } from 'react-i18next';
 import i18n from "../i18n";
 
-const Navbar = () => {
+// eslint-disable-next-line react/prop-types
+const Navbar = ({ isMain }) => {
   // const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
 
+  const handleLinkClick = () => {
+    setIsMobileMenuOpen(false);
+  };
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -53,9 +57,11 @@ const Navbar = () => {
       className={`fixed left-0 w-full z-10 transition-all duration-300 ${
         isScrolled || window.innerWidth < 768
           ? "bg-white text-black"
-          : "bg-transparent text-white top-8"
+          : "bg-transparent text-white"
+      } ${isMain ? "top-[1.9rem]" : "top-0"} ${
+        isMain && window.innerWidth < 768 ? "-top-[0.2rem]" : ""
       }`}
-      style={{ padding: "1rem" }}
+      style={{ padding: "1rem 0" }}
     >
       <div className="container mx-auto flex justify-between items-center">
         <div className="logo">
@@ -67,37 +73,61 @@ const Navbar = () => {
         </div>
         <div className="flex items-center flex-start md:justify-start flex-wrap">
           <ul
-            className={`flex flex-col md:flex-row md:items-center absolute md:relative bg-white md:bg-transparent left-0 w-full md:w-auto transition-transform duration-300 ${
-              isMobileMenuOpen ? "top-16" : "-top-48"
-            } md:top-0 md:space-x-8 font-medium text-lg space-y-2 md:space-y-0 p-4 md:p-0`}
+            className={`flex flex-col md:flex-row md:items-center absolute md:relative bg-white md:bg-transparent left-0 w-full md:w-auto ${
+              isMobileMenuOpen ? "top-16" : "-translate-y-full"
+            } md:transform-none md:top-0 md:space-x-8 font-medium text-lg space-y-2 md:space-y-0 p-4 md:p-0`}
           >
             <li>
-              <Link to="/" className="hover:text-orange-500">
+              <Link
+                to="/"
+                className="hover:text-orange-500"
+                onClick={handleLinkClick}
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about" className="hover:text-orange-500">
+              <Link
+                to="/about"
+                className="hover:text-orange-500"
+                onClick={handleLinkClick}
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link to="/tours" className="hover:text-orange-500">
+              <Link
+                to="/tours"
+                className="hover:text-orange-500"
+                onClick={handleLinkClick}
+              >
                 Tours
               </Link>
             </li>
             <li>
-              <Link to="/blog" className="hover:text-orange-500">
+              <Link
+                to="/blog"
+                className="hover:text-orange-500"
+                onClick={handleLinkClick}
+              >
                 Blog
               </Link>
             </li>
             <li>
-              <Link to="/gallery" className="hover:text-orange-500">
+              <Link
+                to="/gallery"
+                className="hover:text-orange-500"
+                onClick={handleLinkClick}
+              >
                 Gallery
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="hover:text-orange-500">
+              <Link
+                to="/contact"
+                className="hover:text-orange-500"
+                onClick={handleLinkClick}
+              >
                 Contact
               </Link>
             </li>
