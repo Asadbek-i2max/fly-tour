@@ -8,13 +8,13 @@ const Team = () => {
     {
       id: 1,
       name: "Abdurakhmonov Muhammad",
-      image: "/src/assets/images/CEO.JPG",
+      image: "../assets/images/about/CEO.JPG",
       role: t("About.CEO")
     },
     {
       id: 2,
       name: "Abdurakhmonov Dilmurod",
-      image: "/src/assets/images/CEO.JPG",
+      image: "../assets/images/about/CEO.JPG",
       role: t("About.Manager")
     }
   ];

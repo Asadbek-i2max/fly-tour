@@ -3,11 +3,11 @@ import 'swiper/css';
 
 const Gallery = () => {
   const images = [
-    '/src/assets/images/gallery1.jpg',
-    '/src/assets/images/gallery2.jpg',
-    '/src/assets/images/gallery3.jpg',
-    '/src/assets/images/gallery4.jpg',
-    '/src/assets/images/gallery5.jpg'
+    '../assets/images/gallery/gallery1.jpg',
+    '../assets/images/gallery/gallery2.jpg',
+    '../assets/images/gallery/gallery3.jpg',
+    '../assets/images/gallery/gallery4.jpg',
+    '../assets/images/gallery/gallery5.jpg'
   ];
 
   return (

@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="grid md:grid-cols-12 grid-cols-1 gap-6">
             <div className="lg:col-span-3 md:col-span-12">
               <Link to="/" className="text-2xl">
-                <img src="/src/assets/images/logo.png" alt="Logo" />
+                <img src="../assets/images/main/logo.png" alt="Logo" />
               </Link>
               <p className="mt-6 text-gray-400">
                 {t('Footer.Text1')}

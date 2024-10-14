@@ -6,9 +6,9 @@ const Blogs = () => {
   const { t } = useTranslation();
 
   const blogsData = [
-    { id: 1, title: t('Blog.BlogTitle') + '1', excerpt: 'Excerpt for Blog Post 1', image: '/src/assets/images/blog.jpg' },
-    { id: 2, title: t('Blog.BlogTitle') + '2', excerpt: 'Excerpt for Blog Post 2', image: '/src/assets/images/blog2.jpg' },
-    { id: 3, title: t('Blog.BlogTitle') + "3", excerpt: 'Excerpt for Blog Post 3', image: '/src/assets/images/blog3.jpg' }
+    { id: 1, title: t('Blog.BlogTitle') + '1', excerpt: 'Excerpt for Blog Post 1', image: '../assets/images/blog/blog.jpg' },
+    { id: 2, title: t('Blog.BlogTitle') + '2', excerpt: 'Excerpt for Blog Post 2', image: '../assets/images/blog/blog2.jpg' },
+    { id: 3, title: t('Blog.BlogTitle') + "3", excerpt: 'Excerpt for Blog Post 3', image: '../assets/images/blog/blog3.jpg' }
   ];
   const [currentPage, setCurrentPage] = useState(1);
   const blogsPerPage = 6;

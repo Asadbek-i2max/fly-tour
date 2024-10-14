@@ -7,15 +7,15 @@ const Tours = () => {
   const { t } = useTranslation();
 
   const toursData = [
-    { id: 1, title: t('Tours.Paris'), price: '1200$', image: '/src/assets/images/paris.jpg' },
-    { id: 2, title: t('Tours.Istanbul'), price: '700$', image: '/src/assets/images/stanbul.jpg' },
-    { id: 3, title: t('Tours.Sharm-al-sheikh'), price: '600$', image: '/src/assets/images/sharm.jpg' },
-    { id: 4, title: t('Tours.Maldives'), price: '700$', image: '/src/assets/images/maldive.jpg' },
-    { id: 5, title: t('Tours.Samarqand'), price: '200$', image: '/src/assets/images/samarqand.jpg' },
-    { id: 6, title: t('Tours.Antalya'), price: '799$', image: '/src/assets/images/antal.jpg' },
-    { id: 7, title: t('Tours.Cappadocia'), price: '520$', image: '/src/assets/images/cappa.jpg' },
-    { id: 8, title: t('Tours.Khiva'), price: '120$', image: '/src/assets/images/khiva.jpg' },
-    { id: 9, title: t('Tours.Medina'), price: '1200$', image: '/src/assets/images/madina.jpg' },
+    { id: 1, title: t('Tours.Paris'), price: '1200$', image: '../assets/images/tours/paris.jpg' },
+    { id: 2, title: t('Tours.Istanbul'), price: '700$', image: '../assets/images/tours/stanbul.jpg' },
+    { id: 3, title: t('Tours.Sharm-al-sheikh'), price: '600$', image: '../assets/images/tours/sharm.jpg' },
+    { id: 4, title: t('Tours.Maldives'), price: '700$', image: '../assets/images/tours/maldive.jpg' },
+    { id: 5, title: t('Tours.Samarqand'), price: '200$', image: '../assets/images/tours/samarqand.jpg' },
+    { id: 6, title: t('Tours.Antalya'), price: '799$', image: '../assets/images/tours/antal.jpg' },
+    { id: 7, title: t('Tours.Cappadocia'), price: '520$', image: '../assets/images/tours/cappa.jpg' },
+    { id: 8, title: t('Tours.Khiva'), price: '120$', image: '../assets/images/tours/khiva.jpg' },
+    { id: 9, title: t('Tours.Medina'), price: '1200$', image: '../assets/images/tours/madina.jpg' },
   ];
 
 

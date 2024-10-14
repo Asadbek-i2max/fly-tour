@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import i18n from "../i18n";
 
+import logoPng from "../assets/images/main/logo.png";
+
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -64,7 +66,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="logo">
           <img
-            src="/src/assets/images/logo.png"
+            src={logoPng}
             alt="Logo"
             className="w-40 object-contain"
           />
