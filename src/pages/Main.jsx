@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import FlyCard from '../components/FlyCard';
 import Banner from '../components/Banner';
 import BannerPic from '../components/BannerPic';
+import Tours from '../components/Tours';
 
 function Main() {
   return (
@@ -13,6 +14,7 @@ function Main() {
       <Hero />
       <FlyCard />
       <BannerPic />
+      <Tours />
       <Banner />
     </div>
   );
