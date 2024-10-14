@@ -1,7 +1,104 @@
 {
-    "welcome_message": "Welcome to our travel agency!",
-    "contact_us": "Contact Us",
-    "phone": "Phone",
-    "email": "Email"
+  "InfoBar": {
+    "Work": "Mon-Sun: 9am to 6pm",
+    "Adress": "Olmazor District, Furqat park 1, Tashkent",
+    "Email": "Email"
+  },
+  "Navbar": {
+    "Home": "Home",
+    "About": "About",
+    "Tours": "Tours",
+    "Blog": "Blog",
+    "Gallery": "Gallery",
+    "Contact": "Contact"
+  },
+  "Hero": {
+    "Title": "Find your best travels package",
+    "TitleUnder": "travels package",
+    "Desc": "Planning for a trip? We will organize your trip with the best places and within the best budget!",
+    "See": "See more",
+    "Title2": "Discover Your Next Adventure",
+    "Desc2": "Explore breathtaking destinations and unforgettable experiences. From exotic beaches to vibrant cities, let us help you create memories that last a lifetime. Join us on a journey that goes beyond travel!"
+  },
+  "InfoCard": {
+    "Fly": "Fly with us",
+    "FlyText": "Get instant helpful resources about anything on the go, easily implement secure money transfer solutions, boost your daily efficiency, connect to other app users and create your own Fly Trip network, and much more with just a few taps.",
+    "Visitors": "Visitors",
+    "Packages": "Travel packages"
+  },
+  "Tours": {
+    "Paris": "Paris",
+    "Istanbul": "Istanbul",
+    "Sharm-al-sheikh": "Sharm al sheikh",
+    "Maldives": "Maldives",
+    "Samarqand": "Samarqand",
+    "Antalya": "Antalya",
+    "Cappadocia": "Cappadocia",
+    "Khiva": "Khiva",
+    "Mecca": "Mecca",
+    "Medina": "Medina"
+  },
+  "Pluses": {
+    "Explore": "Explore all corners of The world with us",
+    "Plus": "Travel can be unpredictable, and we believe in being there for our clients every step of the way. Our dedicated support team is available 24/7 to assist you with any questions or concerns, ensuring peace of mind throughout your journey.",
+    "Flight": "Flight",
+    "Wifi": "Wifi",
+    "Hotel": "Hotel",
+    "Foods": "Foods"
+  },
+  "Blog": {
+    "BlogTitle": "Blog",
+    "Read more": "Read more"
+  },
+  "Footer": {
+    "Text1": "Planning for a trip? We will organize your trip with the best places and within the best budget!",
+    "Address": "Office address",
+    "A1": "Olmazor district",
+    "A2": "Furkat park",
+    "A3": "Tashkent, Uzbekistan",
+    "Company": "Company",
+    "Newsletter": "Newsletter",
+    "Sign": "Sign up and receive the latest tips via email.",
+    "Write": "Write your email",
+    "Placeholder": "Email",
+    "Sub": "Subscribe",
+    "Design": "Design by FlyTrip"
+  },
+  "About": {
+    "AboutUs": "About us",
+    "Text": "At FlyTrip, we are excited to share that we opened our doors this year, bringing a fresh perspective to the world of travel. Our mission is to craft unforgettable experiences tailored to your unique desires.",
+    "Testimonials": "Testimonials",
+    "Review1": "This is the best service I've ever used! Highly recommended",
+    "Review2": "Amazing experience, will definitely use again!",
+    "Review3": "Exceptional quality and service. Five stars!",
+    "Customer": "Customer",
+    "Meet": "Meet our Team",
+    "Traveler": "Traveler",
+    "CEO": "CEO",
+    "Manager": "Manager"
+  },
+  "PageCard": {
+    "Packages": "Tour packages",
+    "Tours": "Tours",
+    "Blogs": "Fly trip blogs",
+    "Blog": "Blog",
+    "Gallery": "Gallery",
+    "ContactUs": "Contact us",
+    "Contact": "Contact"
+  },
+  "Contact": {
+    "GetInTouch": "Get in touch",
+    "Name": "Your name",
+    "Email": "Your email",
+    "Question": "Your Question",
+    "Comment": "Your Comment",
+    "Send": "Send Message",
+    "Phone": "Phone",
+    "Call": "Feel free to call, us",
+    "Mail": "Email",
+    "MailTo": "Contact us via email",
+    "Location": "Location",
+    "Address": "Olmazor District, Furqat park 1, Tashkent, Uzbekistan",
+    "GoogleBtn": "View on Google map"
   }
-  
+}

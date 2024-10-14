@@ -1,11 +1,17 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 import 'swiper/css';
+import 'swiper/css/effect-creative';
+import { EffectCreative } from 'swiper/modules';
 
 import bg1 from '../assets/images/bg1.jpeg';
 import bg2 from '../assets/images/bg2.jpeg';
 import { useRef } from 'react';
 
+import { useTranslation } from 'react-i18next';
+
 const Hero = () => {
+  const { t } = useTranslation();
   const swiperRef = useRef(null);
 
   const handleSlideChange = (index) => {
@@ -20,9 +26,20 @@ const Hero = () => {
         ref={swiperRef}
         className="absolute top-0 left-0 w-full h-full"
         loop={true}
-        autoplay={{ delay: 3000 }}
-        effect="fade"
+        autoplay={{ delay: 2000 }}
         slidesPerView={1}
+        grabCursor={true}
+        effect={'creative'}
+        creativeEffect={{
+          prev: {
+            shadow: true,
+            translate: ['-20%', 0, -1],
+          },
+          next: {
+            translate: ['100%', 0, 0],
+          },
+        }}
+        modules={[EffectCreative]}
       >
         <SwiperSlide className="flex items-center justify-center w-full h-full">
           <div
@@ -33,28 +50,27 @@ const Hero = () => {
           >
             <div className="absolute inset-0 bg-black/70"></div>
             <div className="flex items-center justify-center h-full relative">
-              <div className="text-center">
+              <div className="text-center relative">
                 <img
                   src="/src/assets/images/map-plane.png"
                   className="mx-auto w-72"
                   alt="plane"
                 />
                 <h1 className="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-6xl mb-6 mt-5">
-                  Find Your Best <br /> Travels Package
+                  {t('Hero.Title')} <br /> {t('Hero.TitleUnder')}
                 </h1>
                 <p className="text-white/70 text-xl max-w-xl mx-auto">
-                  Planning for a trip? We will organize your trip with
-                  the best places and within best budget!
+                  {t('Hero.Desc')}
                 </p>
                 <div className="mt-6">
                   <a
-                    href=""
-                    className="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-red-500 text-white rounded-md"
+                    href="/tours"
+                    className="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-orange-500 text-white rounded-md"
                   >
-                    See More
+                    {t('Hero.See')}
                   </a>
                 </div>
-                <div className="mt-10">
+                <div className="relative top-52">
                   <button
                     onClick={() => handleSlideChange(0)}
                     className="py-1 px-3 mx-1 rounded-full transition duration-300 bg-white"
@@ -89,21 +105,20 @@ const Hero = () => {
                   alt="plane"
                 />
                 <h1 className="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-6xl mb-6 mt-5">
-                  Find Your Best <br /> Travels Package
+                  {t('Hero.Title2')}
                 </h1>
                 <p className="text-white/70 text-xl max-w-xl mx-auto">
-                  Planning for a trip? We will organize your trip with
-                  the best places and within best budget!
+                  {t('Hero.Desc2')}
                 </p>
                 <div className="mt-6">
                   <a
                     href=""
-                    className="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-red-500 text-white rounded-md"
+                    className="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-orange-500 text-white rounded-md"
                   >
-                    See More
+                    {t('Hero.See')}
                   </a>
                 </div>
-                <div className="mt-10">
+                <div className="relative top-52">
                   <button
                     onClick={() => handleSlideChange(0)}
                     className="py-1 px-3 mx-1 rounded-full transition duration-300 text-white"

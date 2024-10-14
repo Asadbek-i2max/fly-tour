@@ -1,20 +1,21 @@
 import Navbar from "../components/Navbar";
-import Contact from "../components/Contact";
-import PageCard from "../components/PageCard";
 import Footer from "../components/Footer";
+import PageCard from "../components/PageCard";
+import GalleryComp from "../components/Gallery";
 
 import { useTranslation } from "react-i18next";
 
-const ContactUs = () => {
+const Gallery = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <Navbar />
-      <PageCard cardTitle={t("PageCard.ContactUs")}></PageCard>
-      <Contact />
+      <PageCard cardTitle={t("PageCard.Gallery")}/>
+      <GalleryComp />
       <Footer />
     </>
   );
 };
 
-export default ContactUs;
+export default Gallery;
