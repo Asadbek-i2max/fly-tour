@@ -3,16 +3,15 @@ import PageCard from "../components/PageCard";
 import Blogs from "../components/Blog";
 import Footer from "../components/Footer";
 
-
 const Blog = () => {
-    return (
-        <>
-        <Navbar />
-        <PageCard cardTitle={"Blogs"}/>
-        <Blogs />
-        <Footer />
-        </>
-    )
-}
+  return (
+    <>
+      <Navbar />
+      <PageCard cardTitle={"Fly trip blogs"} />
+      <Blogs />
+      <Footer />
+    </>
+  );
+};
 
 export default Blog;
