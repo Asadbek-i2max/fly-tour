@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
           <div className="lg:col-span-7 md:col-span-6">
             <img
-              src="/src/assets/images/travel-station.svg"
+              src="../assets/images/main/travel-station.svg"
               className="w-full max-w-[500px] mx-auto"
               alt="Travel Train Station"
             />

@@ -1,4 +1,4 @@
-import TravelImg from "../assets/images/travelbox.png";
+import TravelImg from "../assets/images/main/travelbox.png";
 import { MdFlight, MdOutlineLocalHotel } from "react-icons/md";
 import { IoIosWifi } from "react-icons/io";
 import { IoFastFoodSharp } from "react-icons/io5";

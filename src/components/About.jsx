@@ -8,7 +8,7 @@ const About = () => {
         <div className="sm:w-1/2 p-5 sm:p-10">
           <div className="image object-center text-center">
             <img
-              src="/src/assets/images/about.png"
+              src="../assets/images/about/about.png"
               className="w-full max-w-xs sm:max-w-sm mx-auto"
               alt="About Us"
             />

@@ -1,4 +1,4 @@
-import BannerImage from "../assets/images/banner.jpg";
+import BannerImage from "../assets/images/main/banner.jpg";
 
 const BannerPic = () => {
     const bgImage = {
