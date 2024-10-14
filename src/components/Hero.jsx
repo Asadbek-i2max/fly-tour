@@ -3,11 +3,21 @@ import 'swiper/css';
 
 import bg1 from '../assets/images/bg1.jpeg';
 import bg2 from '../assets/images/bg2.jpeg';
+import { useRef } from 'react';
 
 const Hero = () => {
+  const swiperRef = useRef(null);
+
+  const handleSlideChange = (index) => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.slideTo(index);
+    }
+  };
+
   return (
     <section className="relative h-screen overflow-hidden">
       <Swiper
+        ref={swiperRef}
         className="absolute top-0 left-0 w-full h-full"
         loop={true}
         autoplay={{ delay: 3000 }}
@@ -44,6 +54,20 @@ const Hero = () => {
                     See More
                   </a>
                 </div>
+                <div className="mt-10">
+                  <button
+                    onClick={() => handleSlideChange(0)}
+                    className="py-1 px-3 mx-1 rounded-full transition duration-300 bg-white"
+                  >
+                    1
+                  </button>
+                  <button
+                    onClick={() => handleSlideChange(1)}
+                    className="py-1 px-3 mx-1 rounded-full transition duration-300 text-white"
+                  >
+                    2
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -78,6 +102,20 @@ const Hero = () => {
                   >
                     See More
                   </a>
+                </div>
+                <div className="mt-10">
+                  <button
+                    onClick={() => handleSlideChange(0)}
+                    className="py-1 px-3 mx-1 rounded-full transition duration-300 text-white"
+                  >
+                    1
+                  </button>
+                  <button
+                    onClick={() => handleSlideChange(1)}
+                    className="py-1 px-3 mx-1 rounded-full transition duration-300 bg-white"
+                  >
+                    2
+                  </button>
                 </div>
               </div>
             </div>
