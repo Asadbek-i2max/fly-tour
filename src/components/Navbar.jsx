@@ -1,8 +1,15 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
+
+// import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
 const Navbar = () => {
+  // const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language)
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -16,10 +23,22 @@ const Navbar = () => {
     setIsMobileMenuOpen((prev) => !prev);
   };
 
+  const toggleLanguageDropdown = () => {
+    setIsDropdownOpen((prev) => !prev);
+  };
+
+  const handleLanguageChange = (language) => {
+    setSelectedLanguage(language);
+    setIsDropdownOpen(false);
+    i18n.changeLanguage(language);
+    console.log(selectedLanguage);
+  };
+
+
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -27,10 +46,10 @@ const Navbar = () => {
     <nav
       className={`fixed left-0 w-full z-10 transition-all duration-300 ${
         isScrolled || window.innerWidth < 768
-          ? 'bg-white text-black'
-          : 'bg-transparent text-white top-8'
+          ? "bg-white text-black"
+          : "bg-transparent text-white top-8"
       }`}
-      style={{ padding: '1rem' }}
+      style={{ padding: "1rem" }}
     >
       <div className="container mx-auto flex justify-between items-center">
         <div className="logo">
@@ -72,28 +91,64 @@ const Navbar = () => {
 
         <ul
           className={`flex md:flex-row flex-col md:items-center absolute md:relative bg-white md:bg-transparent left-0 w-full md:w-auto transition-transform duration-300 ${
-            isMobileMenuOpen ? 'top-16' : '-top-48'
-          } md:top-0 md:space-x-4 space-y-2 md:space-y-0 p-4 md:p-0`}
+            isMobileMenuOpen ? "top-16" : "-top-48"
+          } md:top-0 md:space-x-8 font-medium text-lg space-y-2 md:space-y-0 p-4 md:p-0`}
         >
           <li>
-            <a href="#home" className="hover:text-red-500">
+            <Link to="/" className="hover:text-orange-500">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#about" className="hover:text-red-500">
+            <Link to="/about" className="hover:text-orange-500">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#services" className="hover:text-red-500">
-              Services
-            </a>
+            <Link to="/tours" className="hover:text-orange-500">
+              Tours
+            </Link>
           </li>
           <li>
-            <a href="#contact" className="hover:text-red-500">
+            <Link to="/services" className="hover:text-orange-500">
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className="hover:text-orange-500">
               Contact
-            </a>
+            </Link>
+          </li>
+          <li className="relative">
+            <div
+              className="flex items-center cursor-pointer"
+              onClick={toggleLanguageDropdown}
+            >
+              <i className="fa-solid fa-globe"></i>
+            </div>
+
+            {isDropdownOpen && (
+              <ul className="absolute bg-white text-black shadow-md rounded-md mt-2 w-24">
+                <li
+                  className="p-2 hover:bg-gray-200 cursor-pointer"
+                  onClick={() => handleLanguageChange('Uz')}
+                >
+                  Uz
+                </li>
+                <li
+                  className="p-2 hover:bg-gray-200 cursor-pointer"
+                  onClick={() => handleLanguageChange('Ru')}
+                >
+                  Ru
+                </li>
+                <li
+                  className="p-2 hover:bg-gray-200 cursor-pointer"
+                  onClick={() => handleLanguageChange('Eng')}
+                >
+                  Eng
+                </li>
+              </ul>
+            )}
           </li>
         </ul>
       </div>
