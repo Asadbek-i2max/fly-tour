@@ -64,8 +64,8 @@ const Footer = () => {
                   <i data-feather="map-pin" className="text-orange-400 mr-2 mt-1"></i>
                   <div>
                     <h6 className="text-gray-300">
-                      Shayhontoxur, <br />
-                      12A, <br />
+                      Olmazor district, <br />
+                      Furkat park, 1 <br />
                       Tashkent, Uzbekistan
                     </h6>
                   </div>

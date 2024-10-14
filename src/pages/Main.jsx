@@ -6,7 +6,8 @@ import Banner from '../components/Banner';
 import BannerPic from '../components/BannerPic';
 import Tours from '../components/Tours';
 import Blogs from '../components/Blog';
-import Footer from '../components/Footer'
+import Footer from '../components/Footer';
+import Location from '../components/Location';
 
 function Main() {
   return (
@@ -19,6 +20,7 @@ function Main() {
       <Tours />
       <Banner />
       <Blogs />
+      <Location />
       <Footer />
     </div>
   );
