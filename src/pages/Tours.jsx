@@ -7,7 +7,7 @@ const Tours = () => {
   return (
     <>
       <Navbar />
-      <PageCard />
+      <PageCard cardTitle={"Tour packages"}/>
       <ToursCom />
       <Footer />
     </>

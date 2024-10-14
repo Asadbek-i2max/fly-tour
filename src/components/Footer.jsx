@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-<footer className="bg-gray-900 text-gray-200 relative">
+<footer className="bg-gray-900 text-gray-200 relative px-2">
   <div className="container mx-auto">
     <div className="grid grid-cols-12">
       <div className="col-span-12">
@@ -17,7 +17,7 @@ const Footer = () => {
               <p className="mt-6 text-gray-400">
                 Planning for a trip? We will organize your trip with the best places and within the best budget!
               </p>
-              <ul className="list-none mt-6 flex space-x-4">
+              <ul className="list-none mt-6 flex space-x-4 lg:space-x-[5px]">
                 <li>
                   <a href="" target="_blank" className="flex items-center justify-center border border-gray-800 rounded-md hover:bg-orange-400 hover:text-white text-gray-300 p-2">
                     <i className="fa-solid fa-cart-shopping size-4" title="Buy Now"></i>
@@ -58,8 +58,7 @@ const Footer = () => {
 
             <div className="lg:col-span-3 md:col-span-4">
               <div className="lg:ms-8">
-                <h5 className="text-gray-100 font-semibold">Office</h5>
-                <h5 className="text-gray-100 mt-6">Fly Trip</h5>
+                <h5 className="text-gray-100 font-semibold">Office address</h5>
                 <div className="flex mt-4">
                   <i data-feather="map-pin" className="text-orange-400 mr-2 mt-1"></i>
                   <div>
