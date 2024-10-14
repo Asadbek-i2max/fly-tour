@@ -8,7 +8,10 @@ import bg1 from '../assets/images/bg1.jpeg';
 import bg2 from '../assets/images/bg2.jpeg';
 import { useRef } from 'react';
 
+import { useTranslation } from 'react-i18next';
+
 const Hero = () => {
+  const { t } = useTranslation();
   const swiperRef = useRef(null);
 
   const handleSlideChange = (index) => {
@@ -54,18 +57,17 @@ const Hero = () => {
                   alt="plane"
                 />
                 <h1 className="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-6xl mb-6 mt-5">
-                  Find Your Best <br /> Travels Package
+                  {t('Hero.Title')} <br /> {t('Hero.TitleUnder')}
                 </h1>
                 <p className="text-white/70 text-xl max-w-xl mx-auto">
-                  Planning for a trip? We will organize your trip with
-                  the best places and within best budget!
+                  {t('Hero.Desc')}
                 </p>
                 <div className="mt-6">
                   <a
-                    href=""
+                    href="/tours"
                     className="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-orange-500 text-white rounded-md"
                   >
-                    See More
+                    {t('Hero.See')}
                   </a>
                 </div>
                 <div className="relative top-52">
@@ -103,18 +105,17 @@ const Hero = () => {
                   alt="plane"
                 />
                 <h1 className="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-6xl mb-6 mt-5">
-                  Find Your Best <br /> Travels Package
+                  {t('Hero.Title2')}
                 </h1>
                 <p className="text-white/70 text-xl max-w-xl mx-auto">
-                  Planning for a trip? We will organize your trip with
-                  the best places and within best budget!
+                  {t('Hero.Desc2')}
                 </p>
                 <div className="mt-6">
                   <a
                     href=""
                     className="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-orange-500 text-white rounded-md"
                   >
-                    See More
+                    {t('Hero.See')}
                   </a>
                 </div>
                 <div className="relative top-52">

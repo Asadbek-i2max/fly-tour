@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const InfoBar = () => {
+  const { t } = useTranslation();
   const [isSmallScreen, setIsSmallScreen] = useState(
     window.innerWidth < 768
   );
@@ -28,21 +30,21 @@ const InfoBar = () => {
         <div className="text-sm mb-2 md:mb-0">
           <span>
             <i className="fa-regular fa-clock" style={iconcolor}></i>
-            <span className="ml-1">Mon-Sun: 9am to 6pm</span>
+            <span className="ml-1">{t('InfoBar.Work')}</span>
           </span>
           <span className="ml-4">
             <i
               className="fa-solid fa-location-dot"
               style={iconcolor}
             ></i>
-            <span className="ml-1">Tashkent, Uzbekistan</span>
+            <span className="ml-1">{t('InfoBar.Adress')}</span>
           </span>
         </div>
 
         <div className="text-sm flex space-x-3">
           <span>
             <i className="fas fa-envelope mr-1" style={iconcolor}></i>
-            <span className="ml-1">Email: flytour@info.com</span>
+            <span className="ml-1">{t('InfoBar.Email')}: flytour@info.com</span>
           </span>
           <a href="#" className="hover:text-blue-600">
             <i className="fab fa-facebook-f"></i>

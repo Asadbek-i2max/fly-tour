@@ -1,6 +1,10 @@
 
 
+import { useTranslation } from "react-i18next";
+
 const Contact = () => {
+  const { t } = useTranslation();
+
   const handleSubmit = (event) => {
     event.preventDefault();
     alert('Form submitted!');
@@ -21,51 +25,51 @@ const Contact = () => {
           <div className="lg:col-span-5 md:col-span-6">
             <div className="lg:ms-5">
               <div className="bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-800 p-6">
-                <h3 className="mb-6 text-2xl leading-normal font-semibold">Get in touch!</h3>
+                <h3 className="mb-6 text-2xl leading-normal font-semibold">{t("Contact.GetInTouch")}</h3>
 
                 <form method="post" id="myForm" onSubmit={handleSubmit}>
                   <p className="mb-0" id="error-msg"></p>
                   <div id="simple-msg"></div>
                   <div className="grid lg:grid-cols-12 grid-cols-1 gap-3">
                     <div className="lg:col-span-6">
-                      <label htmlFor="name" className="font-semibold">Your Name:</label>
+                      <label htmlFor="name" className="font-semibold">{t("Contact.Name")}:</label>
                       <input
                         name="name"
                         id="name"
                         type="text"
                         className="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0"
-                        placeholder="Name:"
+                        placeholder={t("Contact.Name")}
                       />
                     </div>
 
                     <div className="lg:col-span-6">
-                      <label htmlFor="email" className="font-semibold">Your Email:</label>
+                      <label htmlFor="email" className="font-semibold">{t("Contact.Email")}:</label>
                       <input
                         name="email"
                         id="email"
                         type="email"
                         className="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0"
-                        placeholder="Email:"
+                        placeholder={t("Contact.Email")}
                       />
                     </div>
 
                     <div className="lg:col-span-12">
-                      <label htmlFor="subject" className="font-semibold">Your Question:</label>
+                      <label htmlFor="subject" className="font-semibold">{t("Contact.Question")}:</label>
                       <input
                         name="subject"
                         id="subject"
                         className="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0"
-                        placeholder="Subject:"
+                        placeholder={t("Contact.Question")}
                       />
                     </div>
 
                     <div className="lg:col-span-12">
-                      <label htmlFor="comments" className="font-semibold">Your Comment:</label>
+                      <label htmlFor="comments" className="font-semibold">{t("Contact.Comment")}:</label>
                       <textarea
                         name="comments"
                         id="comments"
                         className="mt-2 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0"
-                        placeholder="Message:"
+                        placeholder={t("Contact.Comment")}
                       ></textarea>
                     </div>
                   </div>
@@ -75,7 +79,7 @@ const Contact = () => {
                     name="send"
                     className="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-orange-500 text-white rounded-md mt-2"
                   >
-                    Send Message
+                    {t("Contact.Send")}
                   </button>
                 </form>
               </div>
@@ -87,23 +91,23 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6">
             <ContactCard
               icon="phone"
-              title="Phone"
-              description="The phrasal sequence of the is now so that many campaign and benefit"
+              title={t("Contact.Phone")}
+              description={t("Contact.Call")}
               linkText="+998 90 023 57 57"
               linkHref=""
             />
             <ContactCard
               icon="mail"
-              title="Email"
-              description="The phrasal sequence of the is now so that many campaign and benefit"
+              title={t("Contact.Mail")}
+              description={t("Contact.MailTo")}
               linkText="flytripinfo@gmail.com"
               linkHref=""
             />
             <ContactCard
               icon="map-pin"
-              title="Location"
-              description="C/54 Northwest Freeway, Suite 558, Houston, USA 485"
-              linkText="View on Google map"
+              title={t("Contact.Location")}
+              description={t("Contact.Address")}
+              linkText={t("Contact.GoogleBtn")}
               linkHref="https://maps.app.goo.gl/mdnS3j6bD6e4ZVA98"
             />
           </div>

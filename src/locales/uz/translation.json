@@ -1,7 +1,104 @@
 {
-    "welcome_message": "Bizning sayohat agentligimizga xush kelibsiz!",
-    "contact_us": "Biz bilan bog'lanish",
-    "phone": "Telefon",
-    "email": "Elektron pochta"
+  "InfoBar": {
+    "Work": "Dush-Yak: 9:00 dan 18:00 gacha",
+    "Adress": "Olmazor tumani, Furqat bog‘i 1, Toshkent",
+    "Email": "Elektron pochta"
+  },
+  "Navbar": {
+    "Home": "Bosh sahifa",
+    "About": "Biz haqimizda",
+    "Tours": "Turlar",
+    "Blog": "Blog",
+    "Gallery": "Galereya",
+    "Contact": "Aloqa"
+  },
+  "Hero": {
+    "Title": "Eng yaxshi sayohat",
+    "TitleUnder": "paketlaringizni toping",
+    "Desc": "Sayohat rejalashtiryapsizmi? Biz sizning sayohatingizni eng yaxshi joylar bilan va eng yaxshi byudjet ichida tashkil etamiz!",
+    "See": "Ko‘proq ko‘rish",
+    "Title2": "O'z keyingi sarguzashtingizni kashf eting",
+    "Desc2": "Sizni o‘zgacha manzaralar va unutilmas tajribalar kutmoqda. Ekzotik plyajlardan rang-barang shaharlarigacha, biz sizga xotiralaringizni yaratishga yordam beramiz. Sayohatdan oshib ketadigan safarga biz bilan qo'shiling!"
+  },
+  "InfoCard": {
+    "Fly": "Biz bilan parvoz qiling",
+    "FlyText": "Yana biror narsa haqida mobil xaritada kerakli manbalarni oling, xavfsiz pul o'tkazmalarini oson amalga oshiring, kunlik samaradorlikni oshiring, boshqa ilova foydalanuvchilari bilan aloqa o'rnating va shunchaki bir necha bosish bilan o'z Fly Trip tarmog'ingizni yarating.",
+    "Visitors": "Tashrifchilar",
+    "Packages": "Sayohat paketlari"
+  },
+  "Tours": {
+    "Paris": "Parij",
+    "Istanbul": "Istanbul",
+    "Sharm-al-sheikh": "Sharm al-Shayx",
+    "Maldives": "Maldivlar",
+    "Samarqand": "Samarqand",
+    "Antalya": "Antaliya",
+    "Cappadocia": "Kapadokiya",
+    "Khiva": "Xiva",
+    "Mecca": "Makka",
+    "Medina": "Medina"
+  },
+  "Pluses": {
+    "Explore": "Biz bilan dunyoning har burchagini kashf eting",
+    "Plus": "Sayohatlar bashorat qilib bo'lmaydigan bo'lishi mumkin, va biz mijozlarimizni har qadamda qo'llab-quvvatlashga ishonamiz. Bizning qo'llab-quvvatlash guruhimiz 24/7 mavjud, har qanday savol yoki muammo bilan yordam berishga tayyor, sayohatingiz davomida sizni xavfsiz his qilishingizni ta'minlaydi.",
+    "Flight": "Parvoz",
+    "Wifi": "Wi-Fi",
+    "Hotel": "Mehmonxona",
+    "Foods": "Taomlar"
+  },
+  "Blog": {
+    "BlogTitle": "Blog",
+    "Read more": "Batafsil o'qish"
+  },
+  "Footer": {
+    "Text1": "Sayohat rejalashtiryapsizmi? Biz sizning sayohatingizni eng yaxshi joylar bilan va eng yaxshi byudjet ichida tashkil etamiz!",
+    "Address": "Ofis manzili",
+    "A1": "Ollmazor tumani",
+    "A2": "Furkat parki",
+    "A3": "Toshkent, O'zbekiston",
+    "Company": "Kompaniya",
+    "Newsletter": "Yangiliklar ro'yxati",
+    "Sign": "Yangiliklarimizni elektron pochta orqali olish uchun ro'yxatdan o'ting.",
+    "Write": "O'z emailingizni yozing",
+    "Placeholder": "Email",
+    "Sub": "Obuna bo'lish",
+    "Design": "FlyTrip tomonidan dizayn qilingan"
+  },
+  "About": {
+    "AboutUs": "Biz haqimizda",
+    "Text": "FlyTripda biz bu yil eshiklarimizni ochganimizdan xursandmiz, sayohat olamiga yangi qarashlar kiritamiz. Bizning missiyamiz — sizning noyob istaklaringizga mos ravishda unutilmas tajribalar yaratish.",
+    "Testimonials": "Sharhlar",
+    "Review1": "Bu eng yaxshi xizmat! Katta tavsiya qilaman.",
+    "Review2": "Ajoyib tajriba, albatta yana foydalanaman!",
+    "Review3": "Mukammal sifat va xizmat. Besh yulduz!",
+    "Customer": "Mijoz",
+    "Meet": "Bizning jamoamiz bilan tanishing",
+    "Traveler": "Sayohatchi",
+    "CEO": "Bosh direktor",
+    "Manager": "Menejer"
+  },
+  "PageCard": {
+    "Packages": "Sayohat paketlari",
+    "Tours": "Turlar",
+    "Blogs": "Fly Trip bloglari",
+    "Blog": "Blog",
+    "Gallery": "Galereya",
+    "ContactUs": "Biz bilan bog'laning",
+    "Contact": "Aloqa"
+  },
+  "Contact": {
+    "GetInTouch": "Biz bilan bog'laning",
+    "Name": "Ismingiz",
+    "Email": "Elektron pochtangiz",
+    "Question": "Savolingiz",
+    "Comment": "Izohingiz",
+    "Send": "Xabar yuborish",
+    "Phone": "Telefon",
+    "Call": "Bizga qo'ng'iroq qilishdan tortinmang",
+    "Mail": "Elektron pochta",
+    "MailTo": "Biz bilan elektron pochta orqali bog'laning",
+    "Location": "Manzil",
+    "Address": "Ollmazor tumani, Furkat park 1, Toshkent, O'zbekiston",
+    "GoogleBtn": "Google xaritasida ko‘rish"
   }
-  
+}

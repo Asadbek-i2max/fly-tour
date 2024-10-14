@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import i18n from "../i18n";
 
 
 const Navbar = () => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -81,7 +81,7 @@ const Navbar = () => {
                 className="hover:text-orange-500"
                 onClick={handleLinkClick}
               >
-                Home
+                {t('Navbar.Home')}
               </Link>
             </li>
             <li>
@@ -90,7 +90,7 @@ const Navbar = () => {
                 className="hover:text-orange-500"
                 onClick={handleLinkClick}
               >
-                About
+                {t('Navbar.About')}
               </Link>
             </li>
             <li>
@@ -99,7 +99,7 @@ const Navbar = () => {
                 className="hover:text-orange-500"
                 onClick={handleLinkClick}
               >
-                Tours
+                {t('Navbar.Tours')}
               </Link>
             </li>
             <li>
@@ -108,7 +108,7 @@ const Navbar = () => {
                 className="hover:text-orange-500"
                 onClick={handleLinkClick}
               >
-                Blog
+                {t('Navbar.Blog')}
               </Link>
             </li>
             <li>
@@ -117,7 +117,7 @@ const Navbar = () => {
                 className="hover:text-orange-500"
                 onClick={handleLinkClick}
               >
-                Gallery
+                {t('Navbar.Gallery')}
               </Link>
             </li>
             <li>
@@ -126,7 +126,7 @@ const Navbar = () => {
                 className="hover:text-orange-500"
                 onClick={handleLinkClick}
               >
-                Contact
+                {t('Navbar.Contact')}
               </Link>
             </li>
           </ul>
@@ -167,22 +167,22 @@ const Navbar = () => {
                 <i className="fa-solid fa-globe"></i>
               </div>
               {isDropdownOpen && (
-                <ul className="absolute md:left-1 right-1 bg-white text-black shadow-md rounded-md mt-2 w-24 z-10">
+                <ul className="absolute md:right-1 right-0 bg-white text-black shadow-md rounded-md mt-2 w-24 z-10">
                   <li
                     className="p-2 hover:bg-gray-200 cursor-pointer"
-                    onClick={() => handleLanguageChange("Uz")}
+                    onClick={() => handleLanguageChange("uz")}
                   >
                     Uz
                   </li>
                   <li
                     className="p-2 hover:bg-gray-200 cursor-pointer"
-                    onClick={() => handleLanguageChange("Ru")}
+                    onClick={() => handleLanguageChange("ru")}
                   >
                     Ru
                   </li>
                   <li
                     className="p-2 hover:bg-gray-200 cursor-pointer"
-                    onClick={() => handleLanguageChange("Eng")}
+                    onClick={() => handleLanguageChange("en")}
                   >
                     Eng
                   </li>

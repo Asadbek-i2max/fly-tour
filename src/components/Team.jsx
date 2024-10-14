@@ -1,23 +1,26 @@
 
-const teamMembersData = [
-  {
-    id: 1,
-    name: "Abdurakhmonov Muhammad",
-    image: "/src/assets/images/CEO.JPG",
-    role: "CEO"
-  },
-  {
-    id: 2,
-    name: "Abdurakhmonov Dilmurod",
-    image: "/src/assets/images/CEO.JPG",
-    role: "Manager"
-  }
-];
+import { useTranslation } from "react-i18next";
 
 const Team = () => {
+  const { t } = useTranslation();
+
+  const teamMembersData = [
+    {
+      id: 1,
+      name: "Abdurakhmonov Muhammad",
+      image: "/src/assets/images/CEO.JPG",
+      role: t("About.CEO")
+    },
+    {
+      id: 2,
+      name: "Abdurakhmonov Dilmurod",
+      image: "/src/assets/images/CEO.JPG",
+      role: t("About.Manager")
+    }
+  ];
   return (
     <div className="bg-white py-10">
-      <h2 className="text-center text-4xl font-bold text-orange-500 mb-6">Meet Our Team</h2>
+      <h2 className="text-center text-4xl font-bold text-orange-500 mb-6">{t("About.Meet")}</h2>
       <div className="flex justify-center flex-wrap max-w-screen-lg mx-auto">
         {teamMembersData.map((member) => (
           <div key={member.id} className="flex flex-col items-center p-4">

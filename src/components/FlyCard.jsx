@@ -1,4 +1,7 @@
+import { useTranslation } from 'react-i18next';
+
 const FlyCard = () => {
+  const { t } = useTranslation();
     return (
       <section className="w-full flex items-center py-10">
         <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-between px-5 md:px-10">
@@ -13,9 +16,9 @@ const FlyCard = () => {
                 <i className="fa-solid fa-globe size-6" style={{ color: '#FFA500' }}></i>
               </div>
               <div className="flex-1">
-                <span className="text-slate-400">Visitors</span>
+                <span className="text-slate-400">{t('InfoCard.Visitors')}</span>
                 <p className="text-xl font-bold">
-                  <span className="counter-value" data-target="4589">2100</span>
+                  <span className="counter-value" data-target="4589">322</span>
                 </p>
               </div>
             </div>
@@ -24,18 +27,18 @@ const FlyCard = () => {
                 <i className="fa-solid fa-users size-6" style={{ color: '#FFA500' }}></i>
               </div>
               <div className="flex-1">
-                <span className="text-slate-400">Travel Packages</span>
+                <span className="text-slate-400">{t('InfoCard.Packages')}</span>
                 <p className="text-xl font-bold">
-                  <span className="counter-value" data-target="50">50</span>+
+                  <span className="counter-value" data-target="50">20</span>+
                 </p>
               </div>
             </div>
           </div>
   
           <div className="w-full md:w-6/12">
-            <h2 className="text-3xl font-bold">Fly with us</h2>
+            <h2 className="text-3xl font-bold">{t('InfoCard.Fly')}</h2>
             <div className="mt-6 text-slate-400 max-w-xl mb-6">
-              Get instant helpful resources about anything on the go, easily implement secure money transfer solutions, boost your daily efficiency, connect to other app users and create your own Fly Trip network, and much more with just a few taps.
+              {t('InfoCard.FlyText')}
             </div>
           </div>
         </div>

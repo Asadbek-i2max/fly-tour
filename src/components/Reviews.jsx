@@ -2,31 +2,37 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 
-const testimonialsData = [
-  {
-    id: 1,
-    text: "This is the best service I've ever used! Highly recommended.",
-    author: "John Doe",
-    position: "Customer",
-  },
-  {
-    id: 2,
-    text: "Amazing experience, will definitely use again!",
-    author: "Jane Smith",
-    position: "Frequent Traveler",
-  },
-  {
-    id: 3,
-    text: "Exceptional quality and service. Five stars!",
-    author: "Emily Johnson",
-    position: "Business Traveler",
-  },
-];
+import { useTranslation } from "react-i18next";
+
+
 
 const Review = () => {
+  const { t } = useTranslation();
+
+  const testimonialsData = [
+    {
+      id: 1,
+      text: t("About.Review1"),
+      author: "Gulmira Shakhnazarova",
+      position: t("About.Customer"),
+    },
+    {
+      id: 2,
+      text: t("About.Review2"),
+      author: "Azizbek Komilov",
+      position: t("About.Traveler"),
+    },
+    {
+      id: 3,
+      text: t("About.Review3"),
+      author: "Lazizbek Mamurov",
+      position: t("About.Traveler"),
+    },
+  ];
+  
   return (
     <div className="bg-slate-700 to-purple-600 py-10">
-      <h2 className="text-center text-4xl font-bold text-indigo-600 mb-6">Testimonials</h2>
+      <h2 className="text-center text-4xl font-bold text-indigo-600 mb-6">{t("About.Testimonials")}</h2>
       <Swiper
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}
