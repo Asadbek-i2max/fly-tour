@@ -5,6 +5,7 @@ import FlyCard from '../components/FlyCard';
 import Banner from '../components/Banner';
 import BannerPic from '../components/BannerPic';
 import Tours from '../components/Tours';
+import Blogs from '../components/Blog';
 
 function Main() {
   return (
@@ -16,6 +17,7 @@ function Main() {
       <BannerPic />
       <Tours />
       <Banner />
+      <Blogs />
     </div>
   );
 }
