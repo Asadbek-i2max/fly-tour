@@ -96,10 +96,13 @@ const Footer = () => {
                     <Link to="/tours" className="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Tours</Link>
                   </li>
                   <li className="mt-2">
-                    <a to="/blog" className="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Blog</a>
+                    <Link to="/blog" className="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Blog</Link>
                   </li>
                   <li className="mt-2">
-                    <a href="/contact" className="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Contact</a>
+                    <Link to="/gallery" className="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Gallery</Link>
+                  </li>
+                  <li className="mt-2">
+                    <Link href="/contact" className="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Contact</Link>
                   </li>
                 </ul>
               </div>
