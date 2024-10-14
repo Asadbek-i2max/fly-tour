@@ -2,13 +2,17 @@ import { useState } from 'react';
 
 import { useTranslation } from 'react-i18next';
 
+import B1 from "../assets/images/blog/blog.jpg";
+import B2 from "../assets/images/blog/blog2.jpg";
+import B3 from "../assets/images/blog/blog3.jpg";
+
 const Blogs = () => {
   const { t } = useTranslation();
 
   const blogsData = [
-    { id: 1, title: t('Blog.BlogTitle') + '1', excerpt: 'Excerpt for Blog Post 1', image: '../assets/images/blog/blog.jpg' },
-    { id: 2, title: t('Blog.BlogTitle') + '2', excerpt: 'Excerpt for Blog Post 2', image: '../assets/images/blog/blog2.jpg' },
-    { id: 3, title: t('Blog.BlogTitle') + "3", excerpt: 'Excerpt for Blog Post 3', image: '../assets/images/blog/blog3.jpg' }
+    { id: 1, title: t('Blog.BlogTitle') + '1', image: B1 },
+    { id: 2, title: t('Blog.BlogTitle') + '2', image: B2 },
+    { id: 3, title: t('Blog.BlogTitle') + "3", image: B3  }
   ];
   const [currentPage, setCurrentPage] = useState(1);
   const blogsPerPage = 6;

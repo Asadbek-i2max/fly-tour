@@ -2,20 +2,30 @@ import { useState } from 'react';
 
 import { useTranslation } from 'react-i18next';
 
+import P from "../assets/images/tours/paris.jpg";
+import SH from "../assets/images/tours/sharm.jpg";
+import ST from "../assets/images/tours/stanbul.jpg";
+import M from "../assets/images/tours/maldive.jpg";
+import S from "../assets/images/tours/samarqand.jpg";
+import A from "../assets/images/tours/antal.jpg";
+import C from "../assets/images/tours/cappa.jpg";
+import K from "../assets/images/tours/khiva.jpg";
+import MD from "../assets/images/tours/madina.jpg";
+
 
 const Tours = () => {
   const { t } = useTranslation();
 
   const toursData = [
-    { id: 1, title: t('Tours.Paris'), price: '1200$', image: '../assets/images/tours/paris.jpg' },
-    { id: 2, title: t('Tours.Istanbul'), price: '700$', image: '../assets/images/tours/stanbul.jpg' },
-    { id: 3, title: t('Tours.Sharm-al-sheikh'), price: '600$', image: '../assets/images/tours/sharm.jpg' },
-    { id: 4, title: t('Tours.Maldives'), price: '700$', image: '../assets/images/tours/maldive.jpg' },
-    { id: 5, title: t('Tours.Samarqand'), price: '200$', image: '../assets/images/tours/samarqand.jpg' },
-    { id: 6, title: t('Tours.Antalya'), price: '799$', image: '../assets/images/tours/antal.jpg' },
-    { id: 7, title: t('Tours.Cappadocia'), price: '520$', image: '../assets/images/tours/cappa.jpg' },
-    { id: 8, title: t('Tours.Khiva'), price: '120$', image: '../assets/images/tours/khiva.jpg' },
-    { id: 9, title: t('Tours.Medina'), price: '1200$', image: '../assets/images/tours/madina.jpg' },
+    { id: 1, title: t('Tours.Paris'), price: '1200$', image: P },
+    { id: 2, title: t('Tours.Istanbul'), price: '700$', image:ST },
+    { id: 3, title: t('Tours.Sharm-al-sheikh'), price: '600$', image: SH },
+    { id: 4, title: t('Tours.Maldives'), price: '700$', image: M },
+    { id: 5, title: t('Tours.Samarqand'), price: '200$', image: S },
+    { id: 6, title: t('Tours.Antalya'), price: '799$', image: A },
+    { id: 7, title: t('Tours.Cappadocia'), price: '520$', image: C },
+    { id: 8, title: t('Tours.Khiva'), price: '120$', image: K },
+    { id: 9, title: t('Tours.Medina'), price: '1200$', image: MD },
   ];
 
 

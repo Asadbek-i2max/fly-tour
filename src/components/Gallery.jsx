@@ -1,13 +1,19 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
+import G1 from "../assets/images/gallery/gallery1.jpg";
+import G2 from "../assets/images/gallery/gallery2.jpg";
+import G3 from "../assets/images/gallery/gallery3.jpg";
+import G4 from "../assets/images/gallery/gallery4.jpg";
+import G5 from "../assets/images/gallery/gallery5.jpg";
+
 const Gallery = () => {
   const images = [
-    '../assets/images/gallery/gallery1.jpg',
-    '../assets/images/gallery/gallery2.jpg',
-    '../assets/images/gallery/gallery3.jpg',
-    '../assets/images/gallery/gallery4.jpg',
-    '../assets/images/gallery/gallery5.jpg'
+    G1,
+    G2,
+    G3,
+    G4,
+    G5
   ];
 
   return (

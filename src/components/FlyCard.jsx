@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
+import CARD_IMAGE from "../assets/images/main/intro.jpeg";
+
 const FlyCard = () => {
   const { t } = useTranslation();
     return (
@@ -7,7 +9,7 @@ const FlyCard = () => {
         <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-between px-5 md:px-10">
           <div className="w-full md:w-5/12 relative mb-6 md:mb-0">
             <img
-              src="../assets/images/main/intro.jpeg"
+              src={CARD_IMAGE}
               className="mx-auto rounded-3xl shadow dark:shadow-gray-700 object-contain object-cover w-full h-80 md:h-[430px]"
               alt="Intro"
             />

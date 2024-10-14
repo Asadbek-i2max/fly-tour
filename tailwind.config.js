@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         sans: ['DM Sans', 'sans-serif'],
       },
+      backgroundImage: {
+        'card-image': "url('./src/assets/images/main/card.jpg')",
+      },
   },
   plugins: [],
 }

@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
 
+import ABOUT_IMG from "../assets/images/about/about.png";
+
 const About = () => {
   const { t } = useTranslation();
   return (
@@ -8,7 +10,7 @@ const About = () => {
         <div className="sm:w-1/2 p-5 sm:p-10">
           <div className="image object-center text-center">
             <img
-              src="../assets/images/about/about.png"
+              src={ABOUT_IMG}
               className="w-full max-w-xs sm:max-w-sm mx-auto"
               alt="About Us"
             />

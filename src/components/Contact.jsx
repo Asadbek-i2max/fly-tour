@@ -2,6 +2,8 @@
 
 import { useTranslation } from "react-i18next";
 
+import IMG from "../assets/images/main/travel-station.svg"
+
 const Contact = () => {
   const { t } = useTranslation();
 
@@ -16,7 +18,7 @@ const Contact = () => {
         <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
           <div className="lg:col-span-7 md:col-span-6">
             <img
-              src="../assets/images/main/travel-station.svg"
+              src={IMG}
               className="w-full max-w-[500px] mx-auto"
               alt="Travel Train Station"
             />

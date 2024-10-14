@@ -1,9 +1,10 @@
-import TravelImg from "../assets/images/main/travelbox.png";
 import { MdFlight, MdOutlineLocalHotel } from "react-icons/md";
 import { IoIosWifi } from "react-icons/io";
 import { IoFastFoodSharp } from "react-icons/io5";
 
 import { useTranslation } from 'react-i18next';
+
+import IMAGE from "../assets/images/main/travelbox.png";
 
 const Banner = () => {
   const { t } = useTranslation();
@@ -15,8 +16,8 @@ const Banner = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
               <div data-aos="flip-up">
                 <img
-                  src={TravelImg}
-                  alt="biryani img"
+                  src={IMAGE}
+                  alt="Banner img"
                   className="max-w-[450px] h-[350px] w-full mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)] object-cover"
                 />
               </div>

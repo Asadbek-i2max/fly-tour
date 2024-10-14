@@ -6,6 +6,7 @@ import { EffectCreative } from 'swiper/modules';
 
 import bg1 from '../assets/images/main/bg1.jpeg';
 import bg2 from '../assets/images/main/bg2.jpeg';
+import plane from '../assets/images/main/map-plane.png';
 import { useRef } from 'react';
 
 import { useTranslation } from 'react-i18next';
@@ -52,7 +53,7 @@ const Hero = () => {
             <div className="flex items-center justify-center h-full relative">
               <div className="text-center relative">
                 <img
-                  src="../assets/images/main/map-plane.png"
+                  src={plane}
                   className="mx-auto w-72"
                   alt="plane"
                 />
@@ -100,7 +101,7 @@ const Hero = () => {
             <div className="flex items-center justify-center h-full relative">
               <div className="text-center">
                 <img
-                  src="../assets/images/main/map-plane.png"
+                  src={plane}
                   className="mx-auto w-72"
                   alt="plane"
                 />
