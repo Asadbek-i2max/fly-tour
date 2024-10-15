@@ -100,5 +100,13 @@
     "Location": "Manzil",
     "Address": "Ollmazor tumani, Furkat park 1, Toshkent, O'zbekiston",
     "GoogleBtn": "Google xaritasida ko‘rish"
+  },
+  "Modal": {
+    "Location": "Manzil",
+    "Hotel address": "Mehmonxona manzili",
+    "Schedule": "Jadval",
+    "Purchase": "Sotib olish",
+    "Price": "Narxi",
+    "AllDay": "Butun kun, har kuni"
   }
 }

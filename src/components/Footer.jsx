@@ -27,13 +27,8 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="" target="_blank" className="flex items-center justify-center border border-gray-800 rounded-md hover:bg-orange-400 hover:text-white text-gray-300 p-2">
+                  <a href="https://t.me/flytripuzb" target="_blank" className="flex items-center justify-center border border-gray-800 rounded-md hover:bg-orange-400 hover:text-white text-gray-300 p-2">
                     <i className="fa-brands fa-telegram size-4" title="Telegram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="" target="_blank" className="flex items-center justify-center border border-gray-800 rounded-md hover:bg-orange-400 hover:text-white text-gray-300 p-2">
-                    <i className="fa-brands fa-linkedin size-4" title="Linkedin"></i>
                   </a>
                 </li>
                 <li>

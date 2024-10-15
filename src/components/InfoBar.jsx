@@ -46,17 +46,17 @@ const InfoBar = () => {
             <i className="fas fa-envelope mr-1" style={iconcolor}></i>
             <span className="ml-1">{t('InfoBar.Email')}: flytour@info.com</span>
           </span>
-          <a href="#" className="hover:text-blue-600">
+          <a href="#" target="_blank" className="hover:text-blue-600">
             <i className="fab fa-facebook-f"></i>
           </a>
-          <a href="#" className="hover:text-blue-500">
+          <a href="#" target="_blank" className="hover:text-blue-500">
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="#" className="hover:text-pink-500">
+          <a href="#" target="_blank" className="hover:text-pink-500">
             <i className="fab fa-instagram"></i>
           </a>
-          <a href="#" className="hover:text-blue-700">
-            <i className="fab fa-linkedin-in"></i>
+          <a href="https://t.me/flytripuzb" target="_blank" className="hover:text-blue-700">
+            <i className="fa-brands fa-telegram"></i>
           </a>
         </div>
       </div>

@@ -100,5 +100,13 @@
     "Location": "Location",
     "Address": "Olmazor District, Furqat park 1, Tashkent, Uzbekistan",
     "GoogleBtn": "View on Google map"
+  },
+  "Modal": {
+    "Location": "Location",
+    "Hotel address": "Hotel Address",
+    "Schedule": "Schedule",
+    "Purchase": "Purchase",
+    "Price": "Price",
+    "AllDay": "All day, everyday"
   }
 }
