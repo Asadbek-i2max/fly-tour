@@ -1,7 +1,9 @@
 
 import { useTranslation } from "react-i18next";
 
-import CEO from "../assets/images/about/CEO.jpg";
+
+import MAIN from "../assets/images/about/main.jpg";
+import MANAGER from "../assets/images/about/manager.jpeg";
 
 const Team = () => {
   const { t } = useTranslation();
@@ -10,13 +12,13 @@ const Team = () => {
     {
       id: 1,
       name: "Abdurakhmonov Muhammad",
-      image: CEO,
+      image: MAIN,
       role: t("About.CEO")
     },
     {
       id: 2,
       name: "Abdurakhmonov Dilmurod",
-      image: CEO,
+      image: MANAGER,
       role: t("About.Manager")
     }
   ];
