@@ -1,7 +1,7 @@
 
 import { useTranslation } from "react-i18next";
 
-import CEO from "../assets/images/about/CEO.jpg";
+import CEO from "../assets/images/about/ceo.jpg";
 import MANAGER from "../assets/images/about/manager.jpeg";
 
 const Team = () => {
