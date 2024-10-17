@@ -22,7 +22,7 @@ const Footer = () => {
               </p>
               <ul className="list-none mt-6 flex space-x-4 lg:space-x-[5px]">
                 <li>
-                  <a href="" target="_blank" className="flex items-center justify-center border border-gray-800 rounded-md hover:bg-orange-400 hover:text-white text-gray-300 p-2">
+                  <a href="/tours" target="_blank" className="flex items-center justify-center border border-gray-800 rounded-md hover:bg-orange-400 hover:text-white text-gray-300 p-2">
                     <i className="fa-solid fa-cart-shopping size-4" title="Buy Now"></i>
                   </a>
                 </li>
@@ -32,22 +32,22 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="" target="_blank" className="flex items-center justify-center border border-gray-800 rounded-md hover:bg-orange-400 hover:text-white text-gray-300 p-2">
+                  <a href="https://www.facebook.com/" target="_blank" className="flex items-center justify-center border border-gray-800 rounded-md hover:bg-orange-400 hover:text-white text-gray-300 p-2">
                     <i className="fa-brands fa-facebook size-4" title="facebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="" target="_blank" className="flex items-center justify-center border border-gray-800 rounded-md hover:bg-orange-400 hover:text-white text-gray-300 p-2">
+                  <a href="https://www.instagram.com/" target="_blank" className="flex items-center justify-center border border-gray-800 rounded-md hover:bg-orange-400 hover:text-white text-gray-300 p-2">
                     <i className="fa-brands fa-instagram size-4" title="instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="" target="_blank" className="flex items-center justify-center border border-gray-800 rounded-md hover:bg-orange-400 hover:text-white text-gray-300 p-2">
+                  <a href="https://x.com/?lang=en" target="_blank" className="flex items-center justify-center border border-gray-800 rounded-md hover:bg-orange-400 hover:text-white text-gray-300 p-2">
                     <i className="fa-brands fa-twitter size-4" title="twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="" className="flex items-center justify-center border border-gray-800 rounded-md hover:bg-orange-400 hover:text-white text-gray-300 p-2">
+                  <a href="https://gmail.com" className="flex items-center justify-center border border-gray-800 rounded-md hover:bg-orange-400 hover:text-white text-gray-300 p-2">
                     <i className="fa-solid fa-envelope size-4" title="email"></i>
                   </a>
                 </li>
