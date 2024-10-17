@@ -11,16 +11,16 @@ const Team = () => {
   const teamMembersData = [
     {
       id: 1,
-      name: "Abdurakhmonov Muhammad",
-      image: MAIN,
+      name: "Abdurakhmonov Dilmurod",
+      image: MANAGER,
       role: t("About.CEO")
     },
     {
       id: 2,
-      name: "Abdurakhmonov Dilmurod",
-      image: MANAGER,
+      name: "Abdurakhmonov Muhammad",
+      image: MAIN,
       role: t("About.Manager")
-    }
+    },
   ];
   return (
     <div className="bg-white py-10">
