@@ -107,6 +107,16 @@
     "Schedule": "Schedule",
     "Purchase": "Purchase",
     "Price": "Price",
-    "AllDay": "All day, everyday"
+    "AllDay": "All day, everyday",
+    "Direct": "Direct",
+    "Accom": "Hotel accommodation / Meals according to the chosen hotel concept",
+    "Group": "Group transfer",
+    "Health": "Health insurance",
+    "Services": "Company services",
+    "BookTour": "Book your tour",
+    "Name": "Full name",
+    "Email": "Email",
+    "Number": "Phone number",
+    "Date": "Select date"
   }
 }
