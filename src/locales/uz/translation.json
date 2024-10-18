@@ -102,11 +102,21 @@
     "GoogleBtn": "Google xaritasida ko‘rish"
   },
   "Modal": {
-    "Location": "Manzil",
+    "Location": "Joylashuvi",
     "Hotel address": "Mehmonxona manzili",
     "Schedule": "Jadval",
-    "Purchase": "Sotib olish",
+    "Purchase": "Xarid qilish",
     "Price": "Narxi",
-    "AllDay": "Butun kun, har kuni"
+    "AllDay": "Har kuni, butun kun",
+    "Direct": "To'g'ridan-to'g'ri",
+    "Accom": "Mehmonxonada joylashish / Tanlangan mehmonxona konsepsiyasiga ko'ra taomlar",
+    "Group": "Guruh transferi",
+    "Health": "Sog'liqni sug'urtasi",
+    "Services": "Kompaniya xizmatlari",
+    "BookTour": "Turni bron qiling",
+    "Name": "Ismingiz",
+    "Email": "Elektron pochta",
+    "Number": "Telefon raqamingiz",
+    "Date": "Sanani tanlang"
   }
 }
