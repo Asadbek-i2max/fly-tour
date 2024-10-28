@@ -5,12 +5,17 @@ const Modal = ({ isOpen, onClose, tour }) => {
   const { t } = useTranslation();
   if (!isOpen) return null;
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onClose();
+  };
+
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50" onClick={onClose}>
-      <div className="bg-white p-6 rounded-lg w-3/4 max-w-2xl relative h-[80vh] overflow-y-auto">
+    <div className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50" onClick={handleSubmit}>
+      <div className="bg-white p-6 rounded-lg w-3/4 max-w-2xl relative h-[80vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
         <button
           className="absolute top-3 right-1 text-gray-600 hover:text-red-600 bg-gray-200 hover:bg-gray-300 p-2 rounded-full"
-          onClick={onClose}
+          onClick={handleSubmit}
           aria-label="Close"
         >
           &#x2715;
@@ -134,7 +139,6 @@ const Modal = ({ isOpen, onClose, tour }) => {
             <div className="mb-4">
               <label
                 className="block text-gray-700 font-semibold mb-2"
-                htmlFor="date"
               >
                 {t("Modal.Date")}
               </label>
@@ -143,14 +147,13 @@ const Modal = ({ isOpen, onClose, tour }) => {
                 id="date"
                 name="date"
                 className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
               />
             </div>
 
             <button
               type="submit"
               className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg shadow-md transition-transform transform hover:scale-105"
-              onClick={onClose}
+              onClick={handleSubmit}
             >
               {t("Modal.Purchase")}
             </button>
