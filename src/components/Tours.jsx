@@ -34,7 +34,7 @@ const Tours = () => {
     {
       id: 1,
       title: t('Tours.Paris'),
-      price: '1200$',
+      price: '10000000 som',
       image: P,
       location: t('Tours.Paris'),
       hotelAddress: 'Reneau Square, Paris',
@@ -43,7 +43,7 @@ const Tours = () => {
     {
       id: 2,
       title: t('Tours.Istanbul'),
-      price: '700$',
+      price: '8700000 som',
       image: ST,
       location: t('Tours.Istanbul'),
       hotelAddress: 'Sofia 88A, Istanbul',
@@ -52,7 +52,7 @@ const Tours = () => {
     {
       id: 3,
       title: t('Tours.Sharm-al-sheikh'),
-      price: '600$',
+      price: '5750000 som',
       image: SH,
       location: t('Tours.Sharm-al-sheikh'),
       hotelAddress: '789 Coral Beach, Sharm',
@@ -61,7 +61,7 @@ const Tours = () => {
     {
       id: 4,
       title: t('Tours.Maldives'),
-      price: '700$',
+      price: '12000000 som',
       image: M,
       location: t('Tours.Maldives'),
       hotelAddress: 'Blue island, Maldives',
@@ -70,7 +70,7 @@ const Tours = () => {
     {
       id: 5,
       title: t('Tours.Samarqand'),
-      price: '200$',
+      price: '2300000 som',
       image: S,
       location: t('Tours.Samarqand'),
       hotelAddress: 'Qoplin 71, Samarqand',
@@ -79,7 +79,7 @@ const Tours = () => {
     {
       id: 6,
       title: t('Tours.Antalya'),
-      price: '799$',
+      price: '1000000 som',
       image: A,
       location: t('Tours.Antalya'),
       hotelAddress: 'Emeral beach, Antalya',
@@ -88,7 +88,7 @@ const Tours = () => {
     {
       id: 7,
       title: t('Tours.Cappadocia'),
-      price: '520$',
+      price: '21000000 som',
       image: C,
       location: t('Tours.Cappadocia'),
       hotelAddress: 'Bayram, Cappadocia',
@@ -97,7 +97,7 @@ const Tours = () => {
     {
       id: 8,
       title: t('Tours.Khiva'),
-      price: '120$',
+      price: '1200000 som',
       image: K,
       location: t('Tours.Khiva'),
       hotelAddress: '123 Khazo, Khiva',
@@ -106,7 +106,7 @@ const Tours = () => {
     {
       id: 9,
       title: t('Tours.Medina'),
-      price: '1200$',
+      price: '15000000 som',
       image: MD,
       location: t('Tours.Medina'),
       hotelAddress: '789A, Medina',
