@@ -44,7 +44,7 @@ const InfoBar = () => {
         <div className="text-sm flex space-x-3">
           <span>
             <i className="fas fa-envelope mr-1" style={iconcolor}></i>
-            <span className="ml-1">{t('InfoBar.Email')}: flytour@info.com</span>
+            <span className="ml-1">{t('InfoBar.Email')}: flyinfouz@gmail.com</span>
           </span>
           <a href="https://www.facebook.com/" target="_blank" className="hover:text-blue-600">
             <i className="fab fa-facebook-f"></i>
@@ -52,7 +52,7 @@ const InfoBar = () => {
           <a href="https://x.com/?lang=en" target="_blank" className="hover:text-blue-500">
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="https://www.instagram.com/" target="_blank" className="hover:text-pink-500">
+          <a href="https://www.instagram.com/fly.travelagencyuz/profilecard/?igsh=a2N3em51cno4d21t/" target="_blank" className="hover:text-pink-500">
             <i className="fab fa-instagram"></i>
           </a>
           <a href="https://t.me/flytripuzb" target="_blank" className="hover:text-blue-700">

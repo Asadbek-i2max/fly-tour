@@ -102,7 +102,7 @@ const Contact = () => {
               icon="mail"
               title={t("Contact.Mail")}
               description={t("Contact.MailTo")}
-              linkText="flytripinfo@gmail.com"
+              linkText="flyinfouz@gmail.com"
               linkHref=""
             />
             <ContactCard
