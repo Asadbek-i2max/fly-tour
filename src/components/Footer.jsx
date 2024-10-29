@@ -37,7 +37,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/" target="_blank" className="flex items-center justify-center border border-gray-800 rounded-md hover:bg-orange-400 hover:text-white text-gray-300 p-2">
+                  <a href="https://www.instagram.com/fly.travelagencyuz/profilecard/?igsh=a2N3em51cno4d21t" target="_blank" className="flex items-center justify-center border border-gray-800 rounded-md hover:bg-orange-400 hover:text-white text-gray-300 p-2">
                     <i className="fa-brands fa-instagram size-4" title="instagram"></i>
                   </a>
                 </li>
@@ -70,7 +70,7 @@ const Footer = () => {
                 <div className="flex mt-4">
                   <i data-feather="mail" className="text-orange-400 mr-2 mt-1"></i>
                   <div>
-                    <a href="mailto:contact@example.com" className="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">flyinfo@gmail.com</a>
+                    <a href="mailto:flyinfouz@gmail.com" className="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">flyinfouz@gmail.com</a>
                   </div>
                 </div>
                 <div className="flex mt-4">
